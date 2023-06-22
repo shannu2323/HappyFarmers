@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Demo of JavaScript dynamic drop down list with page redirect after selection of 2nd  value</title>
+<META NAME="DESCRIPTION" CONTENT=
+";>
+<META NAME="KEYWORDS" CONTENT=" ">
+<script language="javascript" src="dd-list2.js"></script>
+</head>
+<body  onload="fillCategory();">
+
+<html>
+<body>
+<FORM name="drop_list" action="yourpage.php" method="POST" >
+		
+<SELECT  NAME="Category" onChange="SelectSubCat();" >
+<Option value="">Category</option>
+</SELECT>&nbsp;
+<SELECT id="SubCat" NAME="SubCat" onChange="SelectRedirect();">
+<Option value="">SubCat</option>
+</SELECT>
+</form>
+<br><br>
+
+Select SCRIPT ( 1st List ) then PHP ( 2nd List )to check how the page gets redirected to PHP home section.
+<br><br>
+<br><br>
+<input type=button onClick="self.close();" value="Close this window"> 
+
+</body>
+</html>
